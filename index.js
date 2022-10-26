@@ -4,9 +4,10 @@ const fs = require("fs");
 // import class from lib
 
 const Manager = require("./lib/Manager");
-const Enginner = require("./lib/Engineer");
+const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const path = require("path");
+const OutputTeam = require("./src/OutputTeam");
 // questrion for manager
 portfolio = [];
 const questionsManager = () => {

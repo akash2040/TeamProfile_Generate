@@ -44,7 +44,7 @@ let generateManagerCard = (Manager) => {
     <div class="card m-1 shadow" style="width: 18rem">
       <div class='card-header'>
         <h3 class="card-title">${Manager.getName()}</h3>
-        <h6 class="card-text"><i class="fa fa-coffee"></i> ${Manager.getRole()}</h6>
+        <h6 class="card-text"> ${Manager.getRole()}</h6>
       </div>
       <div class="card-body">
         <ul class="list-group list-group-flush">
@@ -62,7 +62,7 @@ let generateEngineerCard = (Engineer) => {
     <div class="card m-1 shadow" style="width: 18rem">
       <div class='card-header'>
         <h3 class="card-title">${Engineer.getName()}</h3>
-        <h6 class="card-text"><i class="fa fa-laptop"></i> ${Engineer.getRole()}</h6>
+        <h6 class="card-text">${Engineer.getRole()}</h6>
       </div>
       <div class="card-body">
         <ul class="list-group list-group-flush">
@@ -80,7 +80,7 @@ let generateInternCard = (Intern) => {
     <div class="card m-1 shadow" style="width: 18rem">
       <div class='card-header'>
         <h3 class="card-title">${Intern.getName()}</h3>
-        <h6 class="card-text"><i class="fa fa-graduation-cap"></i> ${Intern.getRole()}</h6>
+        <h6 class="card-text"> ${Intern.getRole()}</h6>
       </div>
       <div class="card-body">
         <ul class="list-group list-group-flush">
@@ -93,7 +93,7 @@ let generateInternCard = (Intern) => {
     `;
 };
 
-function generateportfolio(portfolio) {
+function generatePortfolio(portfolio) {
   console.log(portfolio);
   return `
   <!DOCTYPE html>
@@ -102,13 +102,15 @@ function generateportfolio(portfolio) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    </head>
+    
     <title>My Team</title>
   </head>
-  <body class="bg-dark">
-  <div class="jumbotron jumbotron-fluid bg-info">
-    <div class="container">
+  <body>
+  <div class="jumbotron jumbotron-fluid bg-warning">
+    <div class="container ">
       <h1 class="display-4 text-center">My Team</h1>
     </div>
   </div>
@@ -120,4 +122,4 @@ function generateportfolio(portfolio) {
       `;
 }
 
-module.exports = generateportfolio;
+module.exports = generatePortfolio;
